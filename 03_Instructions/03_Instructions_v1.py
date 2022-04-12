@@ -1,4 +1,5 @@
-# Took the code from 02_Yes_No_Function and made it the base for the instructions, and it also incorporates 
+# Took the code from 02_Yes_No_Function and made it the base for the instructions,
+# and also incorporated new things, such as instructions.
 
 
 # functions go here:
@@ -22,10 +23,23 @@ def yes_no(question_text):
         else:
             print("Please answer 'yes' or 'no'.")
 
+# function to display instructions
+
+def instructions():
+    print("**** How To Play ****")
+    print()
+    print("The rules will go here")
+    print()
+    print("Program Continues")
+    print()
+
 
 # Main Routine goes here.
-show_instructions = yes_no("Have you played Lucky Unicorn Before? ")
-print(f"You entered '{show_instructions}'")
+played_before = yes_no("Have you played Lucky Unicorn Before? ")
+print(f"You entered '{played_before}'")
 print()
-having_fun = yes_no("Are you having fun? ")
-print(f"You entered '{having_fun}'")
+
+if played_before == "No":
+    instructions()
+else:
+    print("Program Continues")
