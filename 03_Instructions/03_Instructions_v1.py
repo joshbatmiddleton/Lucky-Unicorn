@@ -25,6 +25,7 @@ def yes_no(question_text):
 
 # function to display instructions
 
+
 def instructions():
     print("**** How To Play ****")
     print()
