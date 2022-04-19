@@ -10,3 +10,4 @@ valid = False
 while not valid:
     try:
             user_balance = int(input("How much do you want to play with? "))
+            if 0 < user_balance <= 10:
