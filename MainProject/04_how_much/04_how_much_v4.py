@@ -1,21 +1,23 @@
 # File for Version 1.2.
 
-# This file creates the amount of money needed for the game.
-# For example, the user might enter $5, and that would be valid.
-# This version alters the code a bit by making the code more efficient.
+# This file creates the amount of money needed for the game, and turns it into a function.
 
-# Main Routine
-error = "That wasn't a valid input\n"
-user_balance = 0
+def num_check(question, low, high):
+    error = "That was not a valid input\n" \
+        "Please enter a number between {} and {}\n".format(low, high)
 
-# Keep asking until a valid input (1-10) is entered.
-while not 1 <= user_balance <= 10:
-    try:
-        user_balance = int(input("Please enter a whole number between 1 and 10"
-                                 "\nHow much wold you like to play with? $"))
-        print()
+    while True:
+        try:
+            response = int(input(question))
 
-    except ValueError:
-        print(error)
+            if low <= response <= high:
+                return response
+            else:
+                print(error)
 
-print(f"You are playing with {user_balance}")
+        except ValueError:
+            print(error)
+
+
+user_balance = num_check("How much would you like to play with? $", 1, 10)
+print(f"You are playing with ${user_balance}")

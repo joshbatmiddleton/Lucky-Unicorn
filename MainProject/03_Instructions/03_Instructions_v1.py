@@ -1,5 +1,4 @@
-# Took the code from 02_Yes_No_Function and made it the base for the instructions,
-# and also incorporated new things, such as instructions.
+# Took the code from 02_Yes_No_Function and made it the base for the instructions.
 
 
 # functions go here:
