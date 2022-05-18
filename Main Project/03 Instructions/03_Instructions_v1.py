@@ -1,4 +1,4 @@
-# Took the code from 02: Yes-No Function and made it the base for the instructions.
+# Took the code from 02 Yes-No Function and made it the base for the instructions.
 
 
 # functions go here:
