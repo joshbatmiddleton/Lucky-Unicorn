@@ -4,7 +4,7 @@ while show_instructions != "x":
 
     # Ask the user if they have played before:
 
-    show_instructions = input("Have you played Lucky Unicorn before? ").lower()
+    show_instructions = input("Have you played Lucky Unicorn Assesment before? ").lower()
 
     # If they say yes, output "Program continues"
 

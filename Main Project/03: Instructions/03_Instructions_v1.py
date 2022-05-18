@@ -1,3 +1,7 @@
+# Took the code from 02: Yes-No Function and made it the base for the instructions.
+
+
+# functions go here:
 def yes_no(question_text):
     while True:
 
@@ -18,42 +22,24 @@ def yes_no(question_text):
         else:
             print("Please answer 'yes' or 'no'.")
 
+# function to display instructions
+
 
 def instructions():
     print("**** How To Play ****")
     print()
     print("The rules will go here")
     print()
+    print("Program Continues")
+    print()
 
-# Number checking function
-
-
-def num_check(question, low, high):
-    error = "That was not a valid input\n" \
-        "Please enter a number between {} and {}\n".format(low, high)
-
-    while True:
-        try:
-            response = int(input(question))
-
-            if low <= response <= high:
-                return response
-            else:
-                print(error)
-
-        except ValueError:
-            print(error)
 
 # Main Routine goes here.
-
-
-played_before = yes_no("Have you played Lucky Unicorn Before? ")
+played_before = yes_no("Have you played Lucky Unicorn Assesment Before? ")
+print(f"You entered '{played_before}'")
+print()
 
 if played_before == "No":
     instructions()
-
-
-# Ask the user how much they want to play with:
-
-user_balance = num_check("How much would you like to play with? $", 1, 10)
-print(f"You are playing with ${user_balance}")
+else:
+    print("Program Continues")
