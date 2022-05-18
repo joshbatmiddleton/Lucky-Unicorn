@@ -47,7 +47,7 @@ def num_check(question, low, high):
 # Main Routine goes here.
 
 
-played_before = yes_no("Have you played Lucky Unicorn Assesment Before? ")
+played_before = yes_no("Have you played Lucky Unicorn Before? ")
 
 if played_before == "No":
     instructions()

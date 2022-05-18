@@ -21,7 +21,7 @@ def yes_no(question_text):
 
 
 # Main Routine goes here.
-show_instructions = yes_no("Have you played Lucky Unicorn Assesment Before? ")
+show_instructions = yes_no("Have you played Lucky Unicorn Before? ")
 print(f"You entered '{show_instructions}'")
 print()
 having_fun = yes_no("Are you having fun? ")

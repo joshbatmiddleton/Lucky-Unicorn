@@ -35,7 +35,7 @@ def instructions():
 
 
 # Main Routine goes here.
-played_before = yes_no("Have you played Lucky Unicorn Assesment Before? ")
+played_before = yes_no("Have you played Lucky Unicorn Before? ")
 print(f"You entered '{played_before}'")
 print()
 
